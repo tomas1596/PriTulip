@@ -36,7 +36,7 @@ useEffect(() => {
       <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={onClose} />
       
       <div 
-        className={`relative bg-gradient-to-br from-pink-50 to-rose-100 p-8 rounded-lg shadow-2xl border-2 border-pink-200 max-w-md w-full transform transition-all duration-1000 ${
+        className={`relative bg-gradient-to-br from-pink-50 to-rose-100 p-6 rounded-lg shadow-2xl border-2 border-pink-200 max-w-md w-full max-h-[90vh] overflow-y-auto transform transition-all duration-1000 ${
           isEnvelopeOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0'
         }`}
         style={{
@@ -45,6 +45,7 @@ useEffect(() => {
           backgroundPosition: '0 0, 0 10px, 10px -10px, -10px 0px',
         }}
       >
+
         <button
           onClick={onClose}
           className="absolute top-3 right-3 text-pink-400 hover:text-pink-600 transition-colors duration-200 p-1 rounded-full hover:bg-pink-100"
